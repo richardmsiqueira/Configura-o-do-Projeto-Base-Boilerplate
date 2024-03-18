@@ -6,4 +6,10 @@ export default StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
     },
+    button: {
+        backgroundColor: "blue",
+        padding: 10,
+        borderRadius: 5,
+        marginTop: 20,
+    },
     });

@@ -1,15 +1,18 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import Home from "../screens/Home";
+import Profile from "../screens/Profile";
+import { user } from "../data/Profile";
 
 const Tab = createBottomTabNavigator();
 
-const TabRoutes = () => {
+const TabsRoutes = () => {
   return (
-    <Tab.Navigator screenOptions={{ headerShown: false }}>
+    <Tab.Navigator >
       <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Profile" component={Profile} initialParams={user}/>
     </Tab.Navigator>
   );
 };
 
-export default TabRoutes;
+export default TabsRoutes;
